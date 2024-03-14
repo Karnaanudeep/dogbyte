@@ -1,4 +1,4 @@
-package org.example.utils;
+package org.example.dao;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -16,6 +16,9 @@ public class DBConnection {
         try {
             Class.forName(CLASS_NAME);
             connection = DriverManager.getConnection(DATABASE_URL,USER,PASSWORD);
+            if(connection != null){
+                return  connection;
+            }
         }catch (SQLException | ClassNotFoundException exception){
             exception.getMessage();
         }

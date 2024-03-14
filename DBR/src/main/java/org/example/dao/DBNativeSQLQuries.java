@@ -1,4 +1,4 @@
-package org.example.utils;
+package org.example.dao;
 
 public class DBNativeSQLQuries {
     public static final String VICTIM_DELETE = "delete from victim_details where Victim_id=?";
@@ -10,7 +10,7 @@ public class DBNativeSQLQuries {
     public static final String VICTIM_UPDATE = "update victim_details set VictimName=? , VictimAge=? , DogBreed=? , VaccinatedStatus=? ,  VictimAddress=? where Victim_id=?";
     public static final String ADDRESS_FETCH_ALL = null;
     public  static  final String DATABASE_URL = "jdbc:mysql://localhost:3306/DogBiteVictimRegistry";
-    public  static  final String USER = "springstudent";
-    public  static  final String PASSWORD = "springstudent";
+    public  static  final String USER = "root";
+    public  static  final String PASSWORD = "root";
     public  static  final String CLASS_NAME = "com.mysql.cj.jdbc.Driver";
 }
